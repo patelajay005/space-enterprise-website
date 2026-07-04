@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 78" fill="none">
+  <g transform="translate(8, 4)">
+    <g transform="skewX(-12)">
+      <rect x="2" y="3" width="30" height="6" fill="#ffffff"/>
+      <rect x="32" y="3" width="54" height="6" fill="#3f95dd"/>
+      <path fill="#ffffff" d="M2 9 H32 V15 C22 15 14 18 10 23 C7 27 9 31 17 33 L32 33 V39 H2 V9 Z"/>
+      <rect x="38" y="23" width="42" height="6" fill="#3f95dd"/>
+      <rect x="2" y="44" width="30" height="6" fill="#ffffff"/>
+      <rect x="32" y="44" width="54" height="6" fill="#3f95dd"/>
+      <path fill="#ffffff" d="M2 39 H32 V44 H2 V39 Z"/>
+    </g>
+  </g>
+  <text x="74" y="72" text-anchor="middle" font-family="Georgia, 'Times New Roman', Times, serif" font-size="13" font-weight="600" fill="#ffffff">Space Enterprise</text>
+</svg>
