@@ -1,0 +1,182 @@
+/* Space Enterprise — Metal Scrap Business Theme */
+
+:root {
+  --color-blue: #b87333;
+  --color-blue-dark: #9a6129;
+  --color-blue-light: #f5ebe0;
+  --color-black: #1a1a1a;
+  --metal-dark: #2a3138;
+  --metal-mid: #3d4852;
+}
+
+.header {
+  background-color: rgba(42, 49, 56, 0.97);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.header .nav a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.header .nav a:hover {
+  color: var(--color-blue-light);
+}
+
+.menu-toggle span {
+  background-color: var(--color-white);
+}
+
+.nav {
+  background-color: var(--metal-dark);
+}
+
+.nav a {
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--metal-dark) 0%, var(--metal-mid) 45%, #4a5568 100%);
+}
+
+.hero::before {
+  background: radial-gradient(ellipse, rgba(184, 115, 51, 0.15) 0%, transparent 70%);
+}
+
+.hero-title {
+  color: var(--color-white);
+}
+
+.hero-desc {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.btn-secondary {
+  color: var(--color-white);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-white);
+  color: var(--metal-dark);
+  border-color: var(--color-white);
+}
+
+.stat-item {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.stat-item h4 {
+  color: var(--color-white);
+}
+
+.stat-item p {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.stat-icon {
+  background-color: rgba(184, 115, 51, 0.2);
+  color: #e8b87a;
+}
+
+.products {
+  background-color: var(--color-gray-50);
+}
+
+.metal-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.metal-product-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  border: 1px solid var(--color-gray-200);
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.metal-product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-blue);
+}
+
+.metal-product-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-blue-light) 0%, #fff 100%);
+  border-radius: var(--radius);
+  color: var(--color-blue);
+  margin-bottom: 20px;
+}
+
+.metal-product-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.metal-product-card p {
+  font-size: 0.9rem;
+  color: var(--color-gray-600);
+  flex-grow: 1;
+  margin-bottom: 16px;
+  line-height: 1.65;
+}
+
+.metal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.metal-tag {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-600);
+  border-radius: 100px;
+}
+
+.business-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.business-switch:hover {
+  color: var(--color-white);
+}
+
+.business-switch svg {
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .metal-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .metal-products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metal-product-card {
+    padding: 24px;
+  }
+}

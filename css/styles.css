@@ -216,7 +216,34 @@ h3 { font-size: clamp(1.15rem, 2.5vw, 1.35rem); }
   box-shadow: var(--shadow-md);
 }
 
-/* ---- Header ---- */
+.business-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-gray-600);
+  margin-bottom: 20px;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.business-switch:hover {
+  color: var(--color-blue);
+}
+
+.business-switch svg {
+  flex-shrink: 0;
+}
+
+.ceramic-switch {
+  color: var(--color-gray-600);
+}
+
+.ceramic-switch:hover {
+  color: var(--color-blue);
+}
+
 
 .header {
   position: fixed;
@@ -797,6 +824,12 @@ section {
 .product-title-plain {
   font-family: var(--font-sans);
   font-weight: 600;
+  font-style: normal;
+}
+
+.heading-plain {
+  font-family: var(--font-sans);
+  font-weight: inherit;
   font-style: normal;
 }
 
